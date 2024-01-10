@@ -19,9 +19,10 @@ header{
     justify-content: center;
     align-items: center;
 }
-header ul{
+header nav ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    list-style: none;
     align-items: center;
 }
 header ul li{
@@ -32,6 +33,11 @@ header ul li{
 }
 header ul li a{
     text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+header ul li a:hover{
+    color: rgb(196, 196, 196);
 }
 
 section{
@@ -43,9 +49,54 @@ section{
     align-items: center;
 }
 
+section.content-one{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+section.content-one>div.left, section.content-one>div.right{
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    flex: 20%;
+    /* justify-content: center; */
+    /* background-color: red; */
+}
+/* 
+img.item{
+    paddig
+} */
+
+section.content-one>div.left{
+    padding-right: 20px;
+    padding-left: 10px;
+}
+section.content-one>div.left .item , section.content-one>div.right .item{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: black;
+}
+
 footer{
     width: 100%;
     height: 100px;
     box-sizing: border-box;
     background-color: gray;
+}
+
+@media screen and (max-width:768px){
+}
+
+@media screen and (max-width: 576px){
+    header nav{
+        padding: 0px 20px;
+        justify-content: space-between;
+    }
+    
 }

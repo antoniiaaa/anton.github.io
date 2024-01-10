@@ -5,55 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        .container{
-            width: 100%;
-            height: 100vh;
-            box-sizing: border-box;
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .sun{
-            position: relative;
-            width: 100px;
-            height: 100px;
-            box-sizing: border-box;
-            background-color: white;
-            border-radius: 50px;
-            /* animation: movingBox 2s infinite; */
-        }
-        .earth{
-            position: relative;
-            width: 50px;
-            height: 50px;
-            box-sizing: border-box;
-            background-color: lightskyblue;
-            border-radius: 25px;
-            animation: movingBox 5s infinite;
-        }
-        @keyframes movingBox{
-            from {
-                translate:rotate(360deg);
-                translateX: (150px);
-                rotate: (-360deg);
-            }
-            to{translate: rotate(360deg);
-            translate: rotateX(150px);
-            rotate: -360deg;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="stylep.css">
 </head>
 <body>
     <div class="container">
-        <div class="sun"></div>
-        <div class="earth"></div>
+        <div class="sun">
+            <img src="sun.png" alt="">
+        </div>
+        <div class="earth">
+            <img src="earth.png" alt="">
+        </div>
     </div>
 </body>
 </html>
